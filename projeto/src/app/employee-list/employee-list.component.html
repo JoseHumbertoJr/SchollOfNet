@@ -1,0 +1,15 @@
+<h1>Nossos Empregados</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Salário</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees_">
+            <td>{{employee.name}}</td>
+            <td [style.color]="getSalaryColor(employee)"></td>
+        </tr>
+    </tbody>
+</table>
